@@ -1,0 +1,22 @@
+{
+  "name": "isomorphic-JS-talk",
+  "version": "0.0.1",
+  "description": "fluxible demo",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:andrei-yanovich/isomorphic-JS-talk.git"
+  },
+  "keywords": [
+    "fluxible"
+  ],
+  "author": "Andrei Yanovich",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/andrei-yanovich/isomorphic-JS-talk/issues"
+  },
+  "homepage": "https://github.com/andrei-yanovich/isomorphic-JS-talk"
+}
