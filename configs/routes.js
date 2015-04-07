@@ -1,20 +1,25 @@
 'use strict';
 
-var loadPage = require('../actions/loadPage');
+var showChat = require('../actions/showChat');
+var openThread = require('../actions/openThread');
 
 module.exports = {
     home: {
         path: '/',
         method: 'get',
-        page: 'home',
-        title: 'Home',
-        action: loadPage
+        action: function (context, payload, done) {
+            context.executeAction(showChat, {}, done);
+        }
     },
-    about: {
-        path: '/about',
+    thread: {
+        path: '/thread/:id',
         method: 'get',
-        page: 'about',
-        title: 'About',
-        action: loadPage
+        action: function (context, payload, done) {
+            context.executeAction(showChat, { threadID: payload.params.id }, function() {
+                context.executeAction(openThread, { threadID: payload.params.id }, function() {
+                    done();
+                });
+            });
+        }
     }
 };

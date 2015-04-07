@@ -21,13 +21,21 @@ var server = express();
 server.set('state namespace', 'App');
 server.use('/public', express.static(__dirname + '/build'));
 
+
+// Get access to the fetchr plugin instance
+var fetchrPlugin = app.getPlugin('FetchrPlugin');
+// Register our messages REST service
+fetchrPlugin.registerService(require('./services/message'));
+// Set up the fetchr middleware
+server.use(fetchrPlugin.getXhrPath(), fetchrPlugin.getMiddleware());
+
 server.use(function (req, res, next) {
-    var context = app.createContext();
+    var context = app.createContext({
+        req: req, // The fetchr plugin depends on this);
+    });
 
     debug('Executing navigate action');
-    context.getActionContext().executeAction(navigateAction, {
-        url: req.url
-    }, function (err) {
+    context.getActionContext().executeAction(navigateAction, { url: req.url }, function (err) {
         if (err) {
             if (err.status && err.status === 404) {
                 next();
