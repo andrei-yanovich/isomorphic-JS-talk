@@ -1,13 +1,12 @@
 'use strict';
 
-var React = require('react');
 var Fluxible = require('fluxible');
 var fetchrPlugin = require('fluxible-plugin-fetchr');
 var routrPlugin = require('fluxible-plugin-routr');
 
 // create new fluxible instance
 var app = new Fluxible({
-    component: React.createFactory(require('./components/ChatApp.jsx'))
+    component: require('./components/ChatApp.jsx')
 });
 
 // add routes to the routr plugin

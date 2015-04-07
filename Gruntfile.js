@@ -4,7 +4,7 @@ module.exports = function (grunt) {
     grunt.initConfig({
         clean: ['build'],
         concurrent: {
-            dev: ['nodemon:app', 'webpack:dev'],
+            dev: ['nodemon:app', 'webpack:dev', 'copy'],
             options: {
                 logConcurrentOutput: true
             }
@@ -18,10 +18,17 @@ module.exports = function (grunt) {
                 jshintrc: true
             }
         },
+        copy: {
+            files: {
+                src: '*.css',           // copy all files and subfolders
+                dest: 'build/'    // destination folder
+            }
+        },
         nodemon: {
             app: {
                 script: './server.js',
                 options: {
+                    nodeArgs: ['--debug'],
                     ignore: ['build/**'],
                     ext: 'js,jsx'
                 }
@@ -58,6 +65,7 @@ module.exports = function (grunt) {
     // libs
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-jshint');
+    grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-concurrent');
     grunt.loadNpmTasks('grunt-nodemon');
     grunt.loadNpmTasks('grunt-webpack');

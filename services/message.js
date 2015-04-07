@@ -84,7 +84,4 @@ module.exports = {
             callback(null, _messages);
         }, 10);
     }
-    // update: function(resource, params, body, config, callback) {},
-    // delete: function(resource, params, config, callback) {}
-
 };

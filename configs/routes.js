@@ -1,25 +1,24 @@
 'use strict';
 
-var showChat = require('../actions/showChat');
-var openThread = require('../actions/openThread');
+import showChat from '../actions/showChat';
+import openThread from '../actions/openThread';
 
-module.exports = {
+export default {
     home: {
         path: '/',
         method: 'get',
-        action: function (context, payload, done) {
-            context.executeAction(showChat, {}, done);
+        action (context) {
+            return context.executeAction(showChat, {});
         }
     },
     thread: {
         path: '/thread/:id',
         method: 'get',
-        action: function (context, payload, done) {
-            context.executeAction(showChat, { threadID: payload.params.id }, function() {
-                context.executeAction(openThread, { threadID: payload.params.id }, function() {
-                    done();
+        action (context, payload) {
+            return context.executeAction(showChat, { threadID: payload.params.id })
+                .then(() => { 
+                    context.executeAction(openThread, { threadID: payload.params.id });
                 });
-            });
         }
     }
 };

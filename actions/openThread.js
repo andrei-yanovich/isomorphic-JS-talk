@@ -1,12 +1,9 @@
-/**
- * Copyright 2014, Yahoo! Inc.
- * Copyrights licensed under the New BSD License. See the accompanying LICENSE file for terms.
- */
 'use strict';
+
 var debug = require('debug')('Example:openThreadAction');
 var ThreadStore = require('../stores/ThreadStore');
 
-module.exports = function (context, payload, done) {
+module.exports = function (context, payload) {
     debug('dispatching OPEN_THREAD', payload);
 
     /* If thread Id isn't provided make it the latest thread.
@@ -20,5 +17,4 @@ module.exports = function (context, payload, done) {
     }
 
     context.dispatch('OPEN_THREAD', payload);
-    done();
 };

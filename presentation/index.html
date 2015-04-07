@@ -45,13 +45,13 @@
 
 	<body>
 
-		<div class="theme-font-merriweather theme-color-black-orange" style="width: 100%; height: 100%;">
+		<div class="theme-font-merriweather theme-color-silver-green" style="width: 100%; height: 100%;">
     <div class="reveal">
         <div class="slides">
             <section>
                 <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 250px; height: auto;">
                     <div class="sl-block-content" style="z-index: 11;">
-                        <h1>Isomorphic Javascript</h1>
+                        <h1>Isomorphic JavaScript</h1>
                     </div>
                 </div>
                 <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 280px; top: 611px;">
@@ -62,58 +62,122 @@
             </section>
             <section class="stack">
                 <section>
-                    <div class="sl-block" data-block-type="text" style="width: 900px; left: 30px; top: 58px; height: auto;">
-                        <div class="sl-block-content" style="text-align: left; z-index: 11;">
-                            <h1 style="text-align:center">WTF is isomorphic???</h1>
+                    <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 193px; top: 70px;">
+                        <div class="sl-block-content" style="z-index: 10;" dir="ui">
+                            <h3>Single Page Applications</h3>
                         </div>
                     </div>
-                    <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 280px;">
-                        <div class="sl-block-content fragment" style="z-index: 12;" data-fragment-index="0">
-                            <h3>Isomorphic = JavaScript that runs on both the client and server</h3>
-                        </div>
-                    </div>
-                    <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 490px;">
-                        <div class="sl-block-content fragment" style="z-index: 13;" data-fragment-index="1">
-                            <p>There are two types of isomorphic JS code:</p>
-                        </div>
-                    </div>
-                </section>
-                <section>
-                    <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 640px; left: 160px; top: 101px;">
-                        <div class="sl-block-content" style="z-index: 11; text-align: center;">
-                            <h2>Environment-agnostic</h2>
-                        </div>
-                    </div>
-                    <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 233px;">
-                        <div class="sl-block-content" style="z-index: 12; text-align: center;">
-                            <p>This code&nbsp;doesn't depend on the browser or server specifics e.g.&nbsp;window or request objects.</p>
-                        </div>
-                    </div>
-                    <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 407px;">
-                        <div class="sl-block-content fragment" style="z-index: 13; text-align: center;" data-fragment-index="0">
-                            <p>Examples:</p>
+                    <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 260px; top: 217px;">
+                        <div class="sl-block-content" style="z-index: 11; text-align: left;">
                             <ul>
-                                <li>Underscore.js</li>
-                                <li>Handelbars.js</li>
+                                <li class="visible">
+                                    <span style="color:#000000">Single page load</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 260px; top: 308px;">
+                        <div class="sl-block-content" style="z-index: 12; text-align: left;">
+                            <ul>
+                                <li class="visible">
+                                    <span style="color:#000000">pure data after first load&nbsp;</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 260px; top: 398px;">
+                        <div class="sl-block-content" style="z-index: 13; text-align: left;">
+                            <ul>
+                                <li class="visible">renders on client side</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 260px; top: 487px;">
+                        <div class="sl-block-content" style="z-index: 15; text-align: left;">
+                            <ul>
+                                <li class="visible">examples: Angular, Backbone etc.</li>
                             </ul>
                         </div>
                     </div>
                 </section>
                 <section>
-                    <div class="sl-block" data-block-type="text" style="height: auto; width: 800px; left: 80px; top: 101px;">
-                        <div class="sl-block-content" style="z-index: 11; text-align: center;">
-                            <h2>Shimmed per environment</h2>
+                    <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;">
+                        <div class="sl-block-content">
+                            <h1>BUT</h1>
                         </div>
                     </div>
-                    <div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 233px;">
-                        <div class="sl-block-content" style="z-index: 12; text-align: center;">
-                            <p>Code is adopted to environment-specific properties (like window.location.pathname and req.path) and expose a single API</p>
+                </section>
+                <section>
+                    <div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 193px; top: 70px;">
+                        <div class="sl-block-content" style="z-index: 11;">
+                            <h3>SPA Problems</h3>
                         </div>
                     </div>
-                    <div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 180px; top: 407px;">
+                    <div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 193px; top: 220px;">
+                        <div class="sl-block-content" style="z-index: 12; text-align: left;">
+                            <ul>
+                                <li class="visible">Initial pageload speed</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 193px; top: 311px;">
+                        <div class="sl-block-content" style="z-index: 13; text-align: left;">
+                            <ul>
+                                <li class="visible">SEO</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 193px; top: 401px;">
+                        <div class="sl-block-content" style="z-index: 14; text-align: left;" dir="ui">
+                            <ul>
+                                <li class="visible">Code dublication: validation, routing</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 193px; top: 490px;">
+                        <div class="sl-block-content" style="z-index: 15; text-align: left;">
+                            <ul>
+                                <li class="visible">Legacy browser support</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section class="stack">
+                <section>
+                    <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 136px; height: auto;">
+                        <div class="sl-block-content">
+                            <h2>Isomorphic JavaScript</h2>
+                        </div>
+                    </div>
+                    <div class="sl-block" data-block-type="text" style="width: 800px; left: 86px; top: 320px; height: auto;">
+                        <div class="sl-block-content">
+                            <h3>JavaScript code that can be shared between environments.</h3>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 640px; left: 160px; top: 70px;">
+                        <div class="sl-block-content" style="z-index: 11; text-align: left;">
+                            <h3>Isomorphic code</h3>
+                        </div>
+                    </div>
+                    <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 160px; top: 171px;">
+                        <div class="sl-block-content" style="z-index: 12; text-align: left;">
+                            <p>It's code, which either&nbsp;</p>
+                            <ul>
+                                <li>doesn't depend on the browser or server specifics e.g.&nbsp;window or request objects</li>
+                                <li>
+                                    <span>or is adopted to environment-specific properties (like window.location.pathname and req.path) and expose a single API</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 120px; top: 508px;">
                         <div class="sl-block-content fragment" style="z-index: 13; text-align: center;" data-fragment-index="0">
                             <p>Examples:</p>
                             <ul>
+                                <li>Underscore.js</li>
                                 <li>Superagent</li>
                                 <li>fetchr</li>
                             </ul>
@@ -140,54 +204,17 @@
                         </div>
                     </div>
                 </section>
-            </section>
-            <section class="stack">
-                <section>
-                    <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 193px; top: 70px;">
-                        <div class="sl-block-content" style="z-index: 10;">
-                            <h3>Why go to the trouble?</h3>
-                        </div>
-                    </div>
-                    <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 193px; top: 220px;">
-                        <div class="sl-block-content" style="z-index: 11; text-align: left;">
-                            <ul>
-                                <li class="fragment" data-fragment-index="0">Initial pageload speed</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 193px; top: 311px;">
-                        <div class="sl-block-content" style="z-index: 12; text-align: left;">
-                            <ul>
-                                <li class="fragment" data-fragment-index="1">SEO, make a single-page app. crawlable</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 193px; top: 401px;">
-                        <div class="sl-block-content" style="z-index: 13; text-align: left;">
-                            <ul>
-                                <li class="fragment" data-fragment-index="2">Maintainability. Reduce code dublication</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 193px; top: 490px;">
-                        <div class="sl-block-content" style="z-index: 15; text-align: left;">
-                            <ul>
-                                <li class="fragment" data-fragment-index="3">Flexibility. Run code where you want</li>
-                            </ul>
-                        </div>
-                    </div>
-                </section>
                 <section>
                     <div class="sl-block" data-block-type="shape" style="min-width: 4px; min-height: 4px; width: 450px; height: 142px; left: 201px; top: 23px;">
                         <a class="sl-block-content" data-shape-type="rect" data-shape-fill-color="rgba(0, 0, 0, 0)" data-shape-stretch="true" style="z-index: 10;" data-shape-stroke-color="#45818e" data-shape-stroke-width="4" href="" target="_blank">
                             <svg
                                 xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 450 142">
                                 <defs>
-                                    <clipPath id="shape-mask-184-1427755245253">
+                                    <clipPath id="shape-mask-13-1428417632579">
                                         <rect width="450" height="142"></rect>
                                     </clipPath>
                                 </defs>
-                                <rect width="450" height="142" clip-path="url(#shape-mask-184-1427755245253)" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#45818e" stroke-width="8"></rect>
+                                <rect width="450" height="142" clip-path="url(#shape-mask-13-1428417632579)" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#45818e" stroke-width="8"></rect>
                             </svg>
                         </a>
                     </div>
@@ -206,11 +233,11 @@
                             <svg
                                 xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 450 142">
                                 <defs>
-                                    <clipPath id="shape-mask-185-1427755245255">
+                                    <clipPath id="shape-mask-14-1428417632585">
                                         <rect width="450" height="142"></rect>
                                     </clipPath>
                                 </defs>
-                                <rect width="450" height="142" clip-path="url(#shape-mask-185-1427755245255)" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#45818e" stroke-width="8"></rect>
+                                <rect width="450" height="142" clip-path="url(#shape-mask-14-1428417632585)" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#45818e" stroke-width="8"></rect>
                             </svg>
                         </a>
                     </div>
@@ -219,11 +246,11 @@
                             <svg
                                 xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" preserveAspectRatio="none" viewBox="0 0 450 142">
                                 <defs>
-                                    <clipPath id="shape-mask-186-1427755245256">
+                                    <clipPath id="shape-mask-15-1428417632587">
                                         <rect width="450" height="142"></rect>
                                     </clipPath>
                                 </defs>
-                                <rect width="450" height="142" clip-path="url(#shape-mask-186-1427755245256)" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#45818e" stroke-width="8"></rect>
+                                <rect width="450" height="142" clip-path="url(#shape-mask-15-1428417632587)" class="shape-element" fill="rgba(0, 0, 0, 0)" stroke="#45818e" stroke-width="8"></rect>
                             </svg>
                         </a>
                     </div>
@@ -319,6 +346,7 @@
                         <div class="sl-block-content" style="z-index: 15; text-align: left;">
                             <ul>
                                 <li>See more at&nbsp;
+                
                                     <a href="http://isomorphic.net/" target="_blank">http://isomorphic.net/</a>
                                 </li>
                             </ul>
@@ -334,6 +362,118 @@
                 </section>
             </section>
             <section class="stack">
+                <section>
+                    <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 270px; height: auto;">
+                        <div class="sl-block-content">
+                            <h1>How does it work?</h1>
+                        </div>
+                    </div>
+                </section>
+                <section class="has-light-background" data-background-color="#ffffff">
+                    <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 811px; left: 46px; top: 66px;">
+                        <div class="sl-block-content" style="z-index: 11; color: rgb(39, 78, 19);">
+                            <h2>Isomorphic server side</h2>
+                        </div>
+                    </div>
+                    <div class="sl-block" data-block-type="image" style="min-width: 30px; min-height: 30px; width: 917.948717948718px; height: 358px; left: 21px; top: 179px;">
+                        <div class="sl-block-content" style="z-index: 12;">
+                            <img style="visibility: visible;" data-natural-width="1600" data-natural-height="624" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/andreiyanovich/images/1244030/server_side.png"/>
+                        </div>
+                    </div>
+                </section>
+                <section class="has-light-background" data-background-color="#ffffff">
+                    <div class="sl-block" data-block-type="text" style="height: auto; width: 811px; left: 46px; top: 66px;">
+                        <div class="sl-block-content" style="z-index: 11; color: rgb(39, 78, 19);">
+                            <h2>Isomorphic client side</h2>
+                        </div>
+                    </div>
+                    <div class="sl-block" data-block-type="image" style="width: 918px; height: 437.77125px; left: 21px; top: 139px;">
+                        <div class="sl-block-content" style="z-index: 12;">
+                            <img style="visibility: visible;" data-natural-width="1600" data-natural-height="763" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/andreiyanovich/images/1244070/client_side.png"/>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 26px; height: auto;">
+                        <div class="sl-block-content" style="text-align: left;">
+                            <h2>Isomorphic challengies:</h2>
+                        </div>
+                    </div>
+                    <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 136px; height: auto;">
+                        <div class="sl-block-content" style="text-align: left;">
+                            <ul>
+                                <li>
+                                    <h3>Singleton app on client -&gt; request scoped on server</h3>
+                                </li>
+                            </ul>
+                            <p>&nbsp;</p>
+                            <ul>
+                                <li>
+                                    <h3>Init app on both sides</h3>
+                                </li>
+                            </ul>
+                            <p>&nbsp;</p>
+                            <ul>
+                                <li>
+                                    <h3>Data fetching. Environment specific.</h3>
+                                </li>
+                            </ul>
+                            <h3>Different implementation for client and server, but same functionality and interface.</h3>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="sl-block" data-block-type="text" style="width: 800px; left: 79px; top: 50px; height: auto;">
+                        <div class="sl-block-content" style="color: rgb(39, 78, 19);">
+                            <h2>Flux</h2>
+                        </div>
+                    </div>
+                    <div class="sl-block" data-block-type="image" style="width: 941.714285714286px; height: 206px; left: 9px; top: 214px;">
+                        <div class="sl-block-content">
+                            <img style="visibility: visible;" data-natural-width="1600" data-natural-height="350" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/andreiyanovich/images/1244369/flux.png"/>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="sl-block" data-block-type="text" style="width: 800px; left: 79px; top: 50px; height: auto;">
+                        <div class="sl-block-content" style="color: rgb(39, 78, 19);">
+                            <h2>Server-side&nbsp;flux</h2>
+                        </div>
+                    </div>
+                    <div class="sl-block" data-block-type="image" style="width: 942px; height: 342.65873015873px; left: 9px; top: 163px;">
+                        <div class="sl-block-content">
+                            <img style="visibility: visible;" data-natural-width="1512" data-natural-height="550" data-src="https://s3.amazonaws.com/media-p.slid.es/uploads/andreiyanovich/images/1244404/server_side_flux.png"/>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 26px; height: auto;">
+                        <div class="sl-block-content" style="text-align: left;">
+                            <h2>Isomorphic Flux:</h2>
+                        </div>
+                    </div>
+                    <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 136px; height: auto;">
+                        <div class="sl-block-content" style="text-align: left;">
+                            <ul>
+                                <li>
+                                    <h3>Per request isolated Dispatcher and Stores.</h3>
+                                </li>
+                            </ul>
+                            <p>&nbsp;</p>
+                            <ul>
+                                <li>
+                                    <h3>Share Stores state: serialize on server / deserialize on client</h3>
+                                </li>
+                            </ul>
+                            <p>&nbsp;</p>
+                            <ul>
+                                <li>
+                                    <h3>Server rendering should wait initial data load.</h3>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
                 <section>
                     <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 20px; height: auto;">
                         <div class="sl-block-content" style="z-index: 10;">
@@ -370,7 +510,91 @@
                         </div>
                     </div>
                 </section>
-                <section></section>
+                <section>
+                    <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 70px; height: auto;">
+                        <div class="sl-block-content" style="z-index: 10;">
+                            <h1>Fluxible-app</h1>
+                        </div>
+                    </div>
+                    <div class="sl-block" data-block-type="text" style="width: 800px; left: 160px; top: 192px; height: auto;">
+                        <div class="sl-block-content" style="z-index: 11;">
+                            <pre>
+                                <span style="color:#696969">Container for isomorphic Flux applications</span>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 200px; top: 270px;">
+                        <div class="sl-block-content" style="z-index: 13;">
+                            <ul>
+                                <li>Wrapper around Dispatchr</li>
+                                <li>Provides clean APIs for constructing isomorphic flux application</li>
+                                <li>Removes boilerplate</li>
+                                <li>Enforces unidirectional flow by restricting interfaces</li>
+                                <li>Pluggable: can add new interfaces</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="sl-block" data-block-type="text" style="width: 800px; left: 80px; top: 171px; height: auto;">
+                        <div class="sl-block-content" style="z-index: 10;">
+                            <h1>Fluxible-plugin-routr</h1>
+                        </div>
+                    </div>
+                    <div class="sl-block" data-block-type="text" style="width: 942px; left: 18px; top: 293px; height: auto;">
+                        <div class="sl-block-content" style="z-index: 11;">
+                            <pre>
+                                <span style="color:#696969">Adds isomorphic routing interfaces to your fluxible-app</span>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 189px; top: 381px;">
+                        <div class="sl-block-content" style="z-index: 13;">
+                            <ul>
+                                <li>Shared routes between server and client</li>
+                                <li>Shared route matching logic</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="sl-block" data-block-type="text" style="width: 840px; left: 40px; top: 171px; height: auto;">
+                        <div class="sl-block-content" style="z-index: 10;">
+                            <h1>Fluxible-plugin-fetchr</h1>
+                        </div>
+                    </div>
+                    <div class="sl-block" data-block-type="text" style="width: 942px; left: 18px; top: 293px; height: auto;">
+                        <div class="sl-block-content" style="z-index: 11;">
+                            <pre>
+                                <span style="color:#696969">Adds isomorphic CRUD interfaces to your fluxible-app</span>
+                            </pre>
+                        </div>
+                    </div>
+                    <div class="sl-block" data-block-type="text" style="height: auto; width: 600px; left: 189px; top: 381px;">
+                        <div class="sl-block-content" style="z-index: 13;">
+                            <ul>
+                                <li>Create server side web services</li>
+                                <li>Expose them via an XHR endpoint</li>
+                                <li>Access your services from an action with the same code both server and client</li>
+                                <li>Client uses XHR, server calls service directly</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+                <section>
+                    <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 288px;">
+                        <div class="sl-block-content" style="z-index: 11;">
+                            <h1>Demo</h1>
+                        </div>
+                    </div>
+                </section>
+            </section>
+            <section>
+                <div class="sl-block" data-block-type="text" style="height: auto; min-width: 30px; min-height: 30px; width: 600px; left: 180px; top: 311px;">
+                    <div class="sl-block-content" style="z-index: 11;">
+                        <h1>Questions?</h1>
+                    </div>
+                </div>
             </section>
         </div>
     </div>

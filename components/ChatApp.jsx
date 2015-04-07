@@ -19,7 +19,7 @@ var React = require('react');
 var ThreadSection = require('./ThreadSection.jsx');
 var ApplicationStore = require('../stores/ApplicationStore');
 var RouterMixin = require('flux-router-component').RouterMixin;
-var FluxibleMixin = require('fluxible').FluxibleMixin;
+var FluxibleMixin = require('fluxible/addons/FluxibleMixin');
 
 var ChatApp = React.createClass({
     mixins: [RouterMixin, FluxibleMixin],
